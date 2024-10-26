@@ -1,0 +1,10 @@
+temperatures = []
+
+num_temperatures = int(input("Enter the number of temperatures: "))
+
+for i in range(num_temperatures):
+    temp = float(input(f'Enter {i + 1}st temperature reading: '))
+    temperatures.append(temp)
+    
+avg = sum(temperatures)/len(temperatures)
+print(f'The average temperature is: {avg}')
