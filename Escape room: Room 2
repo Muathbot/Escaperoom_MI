@@ -1,1 +1,20 @@
-#Room 2
+pressuremin = 20
+pressuremax = 80
+
+while True:
+    pressure = float(input("Enter pressure: "))
+    
+    if pressure <= pressuremin:
+        print("Pressure too low, increasing pressure")
+        pressure = pressure + (pressuremin - pressure)
+    elif pressure >= pressuremax:
+        print("Pressure too high, decreasing pressure")
+        pressure = pressure - (pressure - pressuremax)
+    else:
+        print("Pressure is within the acceptable range.")
+        
+    print(f"Adjusted Pressure: {pressure}") 
+    
+    continue_check = input("Do you want to continue monitoring? (yes/no): ")
+    if continue_check.lower() != 'yes':
+        break
