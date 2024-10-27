@@ -1,0 +1,6 @@
+data = { 'homework_score': [40, 60, 80], 'exam_score': [70, 85, 90] }
+
+performance_index = [data['homework_score'][i] * data['exam_score'][i] 
+                     for i in range(len(data['homework_score']))]
+
+print(f"Performance Index (Homework * Exam): {performance_index}")
