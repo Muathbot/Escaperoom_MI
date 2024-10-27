@@ -1,0 +1,15 @@
+def classify_student(homework_score, exam_score):
+
+    high_achiever_threshold = 85
+    pass_threshold = 60
+
+    if homework_score >= high_achiever_threshold and exam_score >= high_achiever_threshold:
+        return "High Achiever"
+    elif homework_score >= pass_threshold and exam_score >= pass_threshold:
+        return "Pass"
+    else:
+        return "Fail"
+
+print(classify_student(90, 92))  
+print(classify_student(65, 70))  
+print(classify_student(55, 58))  
